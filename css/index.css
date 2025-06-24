@@ -4,9 +4,36 @@
     box-sizing: border-box;
 }
 
-body {  
-    font-family: sans-serif;
+:root {
+  
+  --color-texto: #ffffff;
+  --color-texto-nav: white;
+  --color-texto-hover-nav: #00c4ff;
+  --color-texto-tarjetas: black;
+  --color-texto-footer: white;
+  --color-texto-buton: white;
+
+  --fuente-principal: sans-serif, 'arial';
+  --fuete-titulos: arial, sans-serif;
+  --fuente-tarjetas: sans-serif, arial;
+  
+  --color-background: white;
+  --color-footer:#333;
+  --color-tarjetas: rgb(208, 218, 36);
+  --color-header: #333;
+  --color-buton: #007bff;
+  --color-buton-hover: #0056b3;
 }
+
+body {  
+    font-family: var(--fuente-principal);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
+
+/* css header */
 
 .header {
     position: fixed;
@@ -18,8 +45,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    background-color: #333;
-    color: white;
+    background-color: var(--color-header);
+    color: var(--color-texto-nav);
 }
 
 .logo img{
@@ -39,23 +66,150 @@ body {
 }
 
 .nav a {
-    color: white;
+    color: var(--color-texto-nav);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 .nav a:hover {
-  color: #00c4ff;
+    color: var(--color-texto-hover-nav);
 }
 
 .menu-toggle {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 2rem;
-  color: white;
-  cursor: pointer;
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--color-texto-nav);
+    cursor: pointer;
 }
+
+.principal{
+    display: flex;
+    flex: 1;
+    padding: 1rem 1rem;
+    margin-top: 90px;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.contenidoP{
+    display: grid;
+    width: 100%;
+    min-height: 100vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 2fr);
+    grid-template-areas: 
+    "area1 area1 area2 area3"
+    "area1 area1 area2 area3"
+    "area4 area4 area6 area6"
+    "area5 area5 area6 area6";
+    /* "area3 area3 area3 area4"
+    "area3 area3 area3 area4"; */
+    gap: 15px;
+}
+
+.item{
+    color: var(--color-texto-tarjetas);
+    font-size: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+    background-color: var(--color-tarjetas);
+    border-radius: 20px;
+}
+
+.card-title {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.card-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--color-buton);
+  color: var(--color-texto-buton);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.card-button:hover {
+  background-color: var(--color-buton-hover);
+}
+
+.item1{
+    grid-area: area1;
+}
+.item2{
+    grid-area: area2;
+}
+.item3{
+    grid-area: area3;
+}
+.item4{
+    grid-area: area4;
+}
+.item5{
+    grid-area: area5;
+}
+.item6{
+    grid-area: area6;
+}
+/* css footer */
+
+.footer {
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    background-color: var(--color-footer);
+    color: var(--color-texto-footer);
+    padding: 20px;
+    flex-wrap: nowrap;
+}
+
+.footer-left iframe {
+    max-width: 100%;
+    padding: 10px;
+    border: none;
+    background-color: brown;
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: end;
+    flex-wrap: nowrap;
+    background-color: brown;
+    flex-shrink: 0;
+
+}
+.espacio{
+    flex: 1;
+    background-color: brown;
+}
+.footer-right a{
+    color: var(--color-texto-footer);
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 2rem;
+    transition: color 0.3s;
+    padding-bottom: 10px;
+    padding-right: 10px;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -64,7 +218,7 @@ body {
         text-align: right;
         top: 70px;
         right: 0;
-        background: #333;
+        background: var(--color-header);
         width: 100%;
         display: none;
         flex-direction: column;
@@ -86,4 +240,22 @@ body {
   .menu-toggle {
         display: block;
     }
+
+    .contenidoP{
+    display: grid;
+    width: 100%;
+    min-height: 100vh;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(6, 2fr);
+    grid-template-areas: 
+    "area1"
+    "area2"
+    "area3"
+    "area4"
+    "area5"
+    "area6";
+    /* "area3 area3 area3 area4"
+    "area3 area3 area3 area4"; */
+    gap: 15px;
+}
 }
