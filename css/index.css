@@ -18,8 +18,8 @@
   --fuente-tarjetas: sans-serif, arial;
   
   --color-background: white;
-  --color-footer:#333;
-  --color-tarjetas: rgb(208, 218, 36);
+  --color-footer: brown;
+  --color-tarjetas: rgb(168, 180, 55);
   --color-header: #333;
   --color-buton: #007bff;
   --color-buton-hover: #0056b3;
@@ -27,8 +27,8 @@
 
 body {  
     font-family: var(--fuente-principal);
-    width: 100vw;
-    min-height: 100vh;
+    width: 100%;
+    min-height: 200vh;
     display: flex;
     flex-direction: column;
     align-content: space-between;
@@ -40,7 +40,7 @@ body {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100px;
     z-index: 1000;
     display: flex;
@@ -174,24 +174,31 @@ body {
 
 .footer {
     display: flex;
+    max-width: 100%;
     /* justify-content: space-between; */
     /* align-items: center; */
     background-color: var(--color-footer);
     color: var(--color-texto-footer);
     padding: 1em;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+}
+
+.footer-left{
+    display: flex;
 }
 
 .footer-left iframe {
     display: flex;
     /* max-width: 100%; */
-    height: 100%;
+    /* height: 100%; */
     align-self: center;
     justify-self: end;
     /* gap: 10px; */
     border: none;
-    background-color: brown;
+    background-color: transparent;
     padding: 1em;
+    flex-shrink: 1;
+
 }
 
 .footer-right{
@@ -200,13 +207,13 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background-color: brown;
-    flex-shrink: 0;
+    background-color: transparent;
+    flex-shrink: 1;
 
 }
 .espacio{
     flex: 1;
-    background-color: brown;
+    background-color: transparent;
     align-content: center;
     padding-left: 1em;
 }
@@ -240,7 +247,7 @@ body {
         top: 90px;
         right: 0;
         background: var(--color-header);
-        width: 100vw;
+        width: 100%;
         display: none;
         flex-direction: column;
         align-items: flex-end;
@@ -254,7 +261,6 @@ body {
   .nav ul {
         flex-direction: column;
         justify-content: space-evenly;
-        gap: 1rem;
         padding-right: 2rem;
     }
 
@@ -277,6 +283,19 @@ body {
     "area6";
     /* "area3 area3 area3 area4"
     "area3 area3 area3 area4"; */
-    gap: 15px;
-}
+    gap: 1em;
+    }
+
+    .footer{
+        flex-direction: column;
+    }
+    .footer-right{
+        flex-direction: row;
+    }
+    .footer-left{
+        width: 100%;
+    }
+    .espacio ul {
+        flex-direction: row;
+    }
 }
