@@ -237,7 +237,7 @@ body {
         top: 90px;
         right: 0;
         background: var(--color-header);
-        width: 100%;
+        width: 100vw;
         display: none;
         flex-direction: column;
         align-items: flex-end;
