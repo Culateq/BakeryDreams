@@ -5,7 +5,7 @@
   --color-texto-hover-nav: #00c4ff;
   --color-texto-tarjetas: black;
   --color-texto-footer: white;
-  --color-texto-buton: white;
+  --color-texto-button: white;
 
   --fuente-principal: sans-serif, 'arial';
   --fuete-titulos: arial, sans-serif;
@@ -15,6 +15,6 @@
   --color-footer: brown;
   --color-tarjetas: rgb(168, 180, 55);
   --color-header: #333;
-  --color-buton: #007bff;
-  --color-buton-hover: #0056b3;
+  --color-button: #007bff;
+  --color-button-hover: #0056b3;
 }
