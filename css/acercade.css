@@ -233,19 +233,19 @@ body {
         flex-direction: column;
         align-items: flex-end;
         justify-content: space-around;
+
+        ul {
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding-right: 2rem;
+        }
     }
 
     .nav.active {
         display: flex;
-    }
+    } 
 
-  .nav ul {
-        flex-direction: column;
-        justify-content: space-evenly;
-        padding-right: 2rem;
-    }
-
-  .menu-toggle {
+    .menu-toggle {
         display: block;
     }
 
