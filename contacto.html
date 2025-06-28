@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/index.css">
+    <!-- <link rel="stylesheet" href="css/index.css"> -->
     <link rel="stylesheet" href="css/contacto.css">
     <script src="js/index.js"></script>
     <title>Bakery Dreams</title>
@@ -21,43 +21,43 @@
         <nav class="nav" id="nav-menu">
             <ul>
                 <!-- <li><a href="#">Inicio</a></li> -->
-                <li><a href="#">Productos</a></li>
-                <li><a href="#">Nosotros</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Acerca de</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="acercade.html">Acerca de</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="#">Preguntas frecuentes</a></li>
+                <li><a href="preguntas_frecuentes.html">Preguntas frecuentes</a></li>
             </ul>
         </nav>
     <button class="menu-toggle" id="menu-toggle">&#9776;</button>
   </header>
     <main class="principal">
         <div class="contenedorContacto">
-        <h1>Contáctenos</h1>
-        <h3>Estamos aquí para responder tus preguntas y recibir tus comentarios</h3>
+            <h1>Contáctenos</h1>
+            <h3>Estamos aquí para responder tus preguntas y recibir tus comentarios</h3>
         <!-- <form action="#" method="post"> -->
-        <form id="formulario">
-        <label for="nombre">Nombre:</label><br>
-        <input type="text" id="nombre" name="nombre" required><br><br>
+            <form id="formulario">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre" required><br><br>
 
-        <label for="correo">Correo electrónico:</label><br>
-        <input type="email" id="correo" name="correo" required><br><br>
+            <label for="correo">Correo electrónico:</label><br>
+            <input type="email" id="correo" name="correo" required><br><br>
 
-        <label for="asunto">Asunto:</label><br>
-        <input type="text" id="asunto" name="asunto" required><br><br>
+            <label for="asunto">Asunto:</label><br>
+            <input type="text" id="asunto" name="asunto" required><br><br>
 
-        <label for="mensaje">Mensaje:</label><br>
-        <textarea id="mensaje" name="mensaje" rows="6" required></textarea><br><br>
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="mensaje" name="mensaje" rows="6" required></textarea><br><br>
 
-        <label>
-            <input type="checkbox" id="acepto" name="acepto" required>
-            Acepto los <a href="terminos.html" target="_blank">términos y condiciones</a>
-            <br>
-            <br>
-        </label>
+            <label>
+                <input type="checkbox" id="acepto" name="acepto" required>
+                Acepto los <a href="terminos.html" target="_blank">términos y condiciones</a>
+                <br>
+                <br>
+            </label>
 
-        <button type="submit">Enviar</button>
-    </form>
+            <button type="submit">Enviar</button>
+        </form>
 
         <script>
             const formulario = document.getElementById('formulario');
