@@ -141,6 +141,82 @@ body {
 
 /* main */
 
+.principal{
+    display: flex;
+    margin-top: 100px;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    
+    .contenedor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+        align-self: start;
+        align-items: start;
+
+        .fotoperfil{
+            display: flex;
+            flex: 1 1 20%;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .infopersonal{
+            display: flex;
+            flex: 1 1 15%;
+            flex-direction: column;
+            align-items: start;
+            padding-left: 1em;
+            padding-right: 1em;
+            align-self: center;
+
+            .tarjeta{
+                display: flex;
+                gap: 1em;
+                margin-bottom: 1em;
+
+                i{
+                    justify-self: center;
+                    align-self: center;
+                }
+            }
+        }
+
+        .infoadicional{
+            flex: 1 1 35%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            align-self: center;
+        }
+
+        .enlaces{
+            display: flex;
+            flex: 1 1 100%;
+            margin: 2em 0;
+            justify-content: center;
+
+            button {
+                padding: 10px 20px;
+                background-color: var(--color-button);
+                color: var(--color-texto-button);
+                border: none;
+                border-radius: 5px;
+                font-size: 16px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+            }
+
+            button:hover {
+                background-color: var(--color-button-hover);
+            }
+        }
+    }
+}
 
 
 @media (max-width: 768px) {

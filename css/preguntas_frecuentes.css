@@ -160,8 +160,8 @@ body {
 
     button {
         padding: 10px 20px;
-        background-color: #28a745;
-        color: white;
+        background-color: var(--color-button);
+        color: var(--color-texto-button);
         border: none;
         border-radius: 5px;
         font-size: 16px;
@@ -170,7 +170,7 @@ body {
         }
 
     button:hover {
-        background-color: #218838;
+        background-color: var(--color-button-hover);
     }
 }
 
