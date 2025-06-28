@@ -284,9 +284,25 @@ body {
     /* main */
         
     .principal{
+        align-items: center;
         .contenedor{
             word-wrap: break-word;
             overflow-x: hidden;
+        }
+        .fotoperfil{
+            flex: 1 1 100%;
+            width: 100%;
+
+        }
+        .infopersonal,
+        .infoadicional,
+        .fotoperfil,
+        .enlaces{
+            flex: 1 1 100%;
+            width: 100%;
+            padding: 1em 0;
+            align-items: center;
+            align-self: center;
         }
     }
 }
