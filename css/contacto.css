@@ -16,6 +16,60 @@ body {
     align-items: center;
 }
 
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--color-header);
+    color: var(--color-texto-nav);
+}
+
+.logo img{
+    /* background-color: #ffffff; */
+    border-radius: 50%;
+    /* width: auto; */
+    height: 95px;
+    max-height: 80%;
+    object-position: center;
+    display: flex;
+}
+
+.nav ul {
+    display: flex;
+    align-items: end;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 10px 0px;
+    gap: 1.5rem;
+}
+
+.nav a {
+    color: var(--color-texto-nav);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav a:hover {
+    color: var(--color-texto-hover-nav);
+}
+
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--color-texto-nav);
+    cursor: pointer;
+}
+
 .principal{
     display: flex;
     margin-top: 100px;
@@ -25,9 +79,13 @@ body {
 
 .contenedorContacto{
     display: flex;
-    margin-top: 90px;
     width: 100%;
     flex-direction: column;
+
+    h1, h3{
+        align-self: center;
+        text-align: center;
+    }
 }
 .contenedorContacto form{
     display: flex;
@@ -53,10 +111,10 @@ body {
     align-self: center;
 }
 
-.contenedorContacto h1, h3{
+/* .contenedorContacto h1, h3{
     align-self: center;
     text-align: center;
-}
+} */
 
 .contenedorInfo{
     display: flex;
@@ -73,60 +131,183 @@ body {
     /* padding: 1em; */
 }
 
-.footer{
+/* css footer */
+
+.footer {
+    display: flex;
     min-width: 100%;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    background-color: var(--color-footer);
+    color: var(--color-texto-footer);
+    padding: 1em;
+    flex-wrap: wrap;
+}
+
+.footer-left{
+    display: flex;
+}
+
+.mapa {
+    display: flex;
+    /* max-width: 100%; */
+    /* height: 100%; */
+    align-self: center;
+    justify-self: end;
+    /* gap: 10px; */
+    border: none;
+    background-color: transparent;
+    padding: 1em;
+    flex-shrink: 2;
+
+}
+
+.footer-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: transparent;
+    flex-shrink: 1;
+
+}
+.espacio{
+    flex: 1;
+    background-color: transparent;
+    align-content: center;
+    padding-left: 1em;
+}
+
+.espacio ul li a{
+    color: var(--color-texto-nav);
+    text-decoration: none;
+
+}
+.footer-right a{
+    color: var(--color-texto-footer);
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 2rem;
+    transition: color 0.3s;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
 }
 
 @media (max-width: 768px) {
+
+    /* header */
+    .nav {
+        position: absolute;
+        text-align: right;
+        top: 70px;
+        right: 0;
+        background: var(--color-header);
+        width: 100%;
+        display: none;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding-right: 2rem;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .logo img{
+        height: 60px;
+        max-height: 80%;
+    }
+
+    .header{
+        height: 80px;
+    }
+
     .contenedorContacto{
-    display: flex;
-    margin-top: 90px;
-    width: 90%;
-    min-width: none;
-    flex-direction: column;
-    align-content: center;
-}
-.contenedorContacto form{
-    display: flex;
-    margin-top: 30px;
-    flex-direction: column;
-    min-width: 90%;
-    padding: 20px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-style:solid;
-    border-radius: 30px;
-    align-self: center;
-}
+        display: flex;
+        width: 90%;
+        min-width: none;
+        flex-direction: column;
+        align-self: center;
+    }
+    .contenedorContacto form{
+        display: flex;
+        margin-top: 30px;
+        flex-direction: column;
+        min-width: 90%;
+        padding: 20px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-style:solid;
+        border-radius: 30px;
+        align-self: center;
+    }
 
-.contenedorContacto form input, textarea{
-    border-radius: 5px;
-    border-width: 2px;
-}
+    .contenedorContacto form input, textarea{
+        border-radius: 5px;
+        border-width: 2px;
+    }
 
-.contenedorContacto form button{
-    border-radius: 10px;
-    border-width: 2px;
-    width: 50%;
-    align-self: center;
-}
+    .contenedorContacto form button{
+        border-radius: 10px;
+        border-width: 2px;
+        width: 50%;
+        align-self: center;
+    }
 
-.contenedorContacto h1, h3{
-    align-self: center;
-    text-align: center;
-}
+    /* .contenedorContacto h1, h3{
+        align-self: center;
+        text-align: center;
+    } */
 
-.contenedorInfo{
-    display: flex;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    flex-direction: column;
-    min-width: 80%;
-    padding-left: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-style:solid;
-    border-radius: 30px;
-    align-self: center;
-}
+    .contenedorInfo{
+        display: flex;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        flex-direction: column;
+        min-width: 80%;
+        padding-left: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        border-style:solid;
+        border-radius: 30px;
+        align-self: center;
+    }
+
+    /* footer */
+    .footer{
+        flex-direction: column;
+    }
+    .footer-right{
+        flex-direction: row;
+    }
+    .footer-left{
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .espacio ul {
+        flex-direction: row;
+    }
+
+    .mapa{
+        width: 95%;
+        align-self: center;
+        justify-self: center;
+    }
+
 }
