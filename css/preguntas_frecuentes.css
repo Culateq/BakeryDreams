@@ -152,7 +152,6 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-items: ;
 
     h1, h3, p, div{
         align-self: center;
