@@ -16,6 +16,8 @@ body {
     align-items: center;
 }
 
+/* css header */
+
 .header {
     position: fixed;
     top: 0;
@@ -68,67 +70,6 @@ body {
     font-size: 2rem;
     color: var(--color-texto-nav);
     cursor: pointer;
-}
-
-.principal{
-    display: flex;
-    margin-top: 100px;
-    width: 100%;
-    flex-direction: column;
-}
-
-.contenedorContacto{
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-
-    h1, h3{
-        align-self: center;
-        text-align: center;
-    }
-}
-.contenedorContacto form{
-    display: flex;
-    margin-top: 30px;
-    flex-direction: column;
-    min-width: 60%;
-    padding: 60px;
-    border-style:solid;
-    border-radius: 30px;
-    align-self: center;
-}
-
-.contenedorContacto form input, textarea{
-    border-radius: 5px;
-    border-width: 2px;
-    padding: 5px;
-}
-
-.contenedorContacto form button{
-    border-radius: 10px;
-    border-width: 2px;
-    width: 50%;
-    align-self: center;
-}
-
-/* .contenedorContacto h1, h3{
-    align-self: center;
-    text-align: center;
-} */
-
-.contenedorInfo{
-    display: flex;
-    margin-top: 30px;
-    margin-bottom: 40px;
-    flex-direction: column;
-    min-width: 60%;
-    padding-left: 30px;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    border-style:solid;
-    border-radius: 30px;
-    align-self: center;
-    /* padding: 1em; */
 }
 
 /* css footer */
@@ -198,6 +139,10 @@ body {
     text-decoration: underline;
 }
 
+/* main */
+
+
+
 @media (max-width: 768px) {
 
     /* header */
@@ -218,13 +163,13 @@ body {
         display: flex;
     }
 
-    .nav ul {
+  .nav ul {
         flex-direction: column;
         justify-content: space-evenly;
         padding-right: 2rem;
     }
 
-    .menu-toggle {
+  .menu-toggle {
         display: block;
     }
 
@@ -237,58 +182,8 @@ body {
         height: 80px;
     }
 
-    .contenedorContacto{
-        display: flex;
-        width: 90%;
-        min-width: none;
-        flex-direction: column;
-        align-self: center;
-    }
-    .contenedorContacto form{
-        display: flex;
-        margin-top: 30px;
-        flex-direction: column;
-        min-width: 90%;
-        padding: 20px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        border-style:solid;
-        border-radius: 30px;
-        align-self: center;
-    }
-
-    .contenedorContacto form input, textarea{
-        border-radius: 5px;
-        border-width: 2px;
-    }
-
-    .contenedorContacto form button{
-        border-radius: 10px;
-        border-width: 2px;
-        width: 50%;
-        align-self: center;
-    }
-
-    /* .contenedorContacto h1, h3{
-        align-self: center;
-        text-align: center;
-    } */
-
-    .contenedorInfo{
-        display: flex;
-        margin-top: 30px;
-        margin-bottom: 40px;
-        flex-direction: column;
-        min-width: 80%;
-        padding-left: 30px;
-        padding-top: 30px;
-        padding-bottom: 30px;
-        border-style:solid;
-        border-radius: 30px;
-        align-self: center;
-    }
-
     /* footer */
+
     .footer{
         flex-direction: column;
     }
@@ -310,4 +205,6 @@ body {
         justify-self: center;
     }
 
+    /* main */
+        
 }
