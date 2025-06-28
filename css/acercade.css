@@ -170,7 +170,7 @@ body {
             flex: 1 1 15%;
             flex-direction: column;
             align-items: start;
-            padding-left: 1em;
+            /* padding-left: 1em; */
             padding-right: 1em;
             align-self: center;
 
@@ -303,6 +303,10 @@ body {
             padding: 1em 0;
             align-items: center;
             align-self: center;
+        }
+
+        .infopersonal{
+            
         }
     }
 }
