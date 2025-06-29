@@ -235,6 +235,7 @@ details[open] summary::after {
         flex-direction: column;
         justify-content: space-evenly;
         padding-right: 2rem;
+        margin-bottom: 1em;
     }
 
   .menu-toggle {

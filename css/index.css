@@ -113,11 +113,17 @@ body {
     justify-content: end;
     background-color: var(--color-tarjetas);
     border-radius: 50px;
+    background-size:cover;
+    background-repeat: no-repeat;
+    
 }
 
 .card-title {
   font-size: 35px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 0.5em;
+  border-radius: 25px;
 }
 
 .card-button {
@@ -138,21 +144,29 @@ body {
 
 .item1{
     grid-area: area1;
+    background-image: url("../img/flancoco.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
 }
 .item2{
     grid-area: area2;
+    background-image: url("../img/estrellaguayaba.jpg");
 }
 .item3{
     grid-area: area3;
+    background-image: url("../img/canastita.jpg");
 }
 .item4{
     grid-area: area4;
+    background-image: url("../img/flancoco.jpg");
 }
 .item5{
     grid-area: area5;
+    background-image: url("../img/rolloscarne.jpg");
 }
 .item6{
     grid-area: area6;
+    background-image: url("../img/queque2.jpg");
 }
 /* css footer */
 
@@ -246,6 +260,7 @@ body {
         flex-direction: column;
         justify-content: space-evenly;
         padding-right: 2rem;
+        margin-bottom: 1em;
     }
 
   .menu-toggle {
@@ -253,21 +268,59 @@ body {
     }
 
     .contenidoP{
-    display: grid;
-    width: 100%;
-    min-height: 200vh;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 2fr);
-    grid-template-areas: 
-    "area1"
-    "area2"
-    "area3"
-    "area4"
-    "area5"
-    "area6";
-    /* "area3 area3 area3 area4"
-    "area3 area3 area3 area4"; */
-    gap: 1em;
+        display: grid;
+        width: 100%;
+        min-height: 200vh;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 2fr);
+        grid-template-areas: 
+        "area1"
+        "area2"
+        "area3"
+        "area4"
+        "area5"
+        "area6";
+        /* "area3 area3 area3 area4"
+        "area3 area3 area3 area4"; */
+        gap: 1em;
+
+        .item{
+            background-size:cover;
+            background-repeat: no-repeat;
+            aspect-ratio: 1/1;
+
+            h2{
+                font-size: 1.5em;
+            }
+
+            button{
+                font-size: 0.8em;
+            }
+        }
+        .item1{
+            grid-area: area1;
+            background-image: url("../img/flancoco.jpg");
+            
+            }
+        .item2{
+            grid-area: area2;
+            background-image: url("../img/estrellaguayaba.jpg");
+        }
+        .item3{
+            grid-area: area3;
+            background-image: url("../img/canastita.jpg");
+        }
+        .item4{
+            grid-area: area4;
+        }
+        .item5{
+            grid-area: area5;
+            background-image: url("../img/rolloscarne.jpg");
+        }   
+        .item6{
+            grid-area: area6;
+            background-image: url("../img/queque2.jpg");
+        }
     }
 
     .footer{
