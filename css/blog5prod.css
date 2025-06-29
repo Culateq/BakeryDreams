@@ -236,11 +236,21 @@ body {
     .principal{
         align-items: center;
         text-align: center;
+
+        .titulo{
+            p{
+                text-align: start;
+            }
+        }
         .contenedor{
             word-wrap: break-word;
             overflow-x: hidden;
             flex-direction: column;
 
+            img{
+                width: 70%;
+                
+        }
         }
     }
 }
