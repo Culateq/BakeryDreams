@@ -164,6 +164,23 @@ body {
             aspect-ratio: 1/1;
         }
 
+        button {
+            padding: 10px 20px;
+            background-color: var(--color-button);
+            color: var(--color-texto-button);
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 20em;
+            margin: 1em 1em;
+        }
+
+        button:hover {
+            background-color: var(--color-button-hover);
+        }
+
     }
 
     
@@ -250,8 +267,12 @@ body {
             img{
                 width: 70%;
                 align-self: center;
-                
-        }
+            }
+
+            button{
+                width: 40%;
+                align-self: center;
+            }
         }
     }
 }
