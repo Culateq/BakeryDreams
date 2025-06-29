@@ -241,6 +241,11 @@ body {
             overflow-x: hidden;
             flex-direction: column;
 
+            img{
+                
+                width: 70%;
+                align-self: center;
+            }
         }
     }
 }
