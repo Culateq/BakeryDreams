@@ -51,6 +51,7 @@ body {
     list-style: none;
     padding: 10px 0px;
     gap: 1.5rem;
+    margin-bottom: 1em;
 }
 
 .nav a {
@@ -147,6 +148,10 @@ body {
     width: 100%;
     margin-top: 100px;
 
+    h1, p{
+        align-self: center;
+    }
+
     .contenedor{
         display: flex;
         flex-direction: row;
@@ -218,6 +223,11 @@ body {
                     gap: 1em;
                     padding: 1em;
                     max-width: 65%;
+
+                    a{
+                        align-self: flex-end;
+                        justify-self:flex-end;
+                    }
                 }
             }
         }
@@ -309,7 +319,7 @@ body {
 
             .filtro-temas ul {
                 display: flex;
-                justify-content: start;
+                justify-content: space-evenly;
                 flex-wrap: wrap;
                 padding: 5px;
                 gap: 2px 1em;
@@ -317,6 +327,30 @@ body {
 
             .filtro-temas li {
                 flex: 0 0 auto;
+            }
+
+            .blogmain{
+
+                .articulo{
+                    flex-direction: column;
+                    margin-top: 2em;
+
+                    img{
+                        align-self: center;
+                        width: 40%;
+                    }
+
+                    .descripcion{
+                        align-self: self-start;
+                        max-width: 100%;
+                        margin: 1em 0;
+                        text-align: start;
+
+                        a{
+                            align-self: flex-end;
+                        }
+                    }
+                }
             }
         }
     }
