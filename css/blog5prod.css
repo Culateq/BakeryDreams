@@ -151,78 +151,7 @@ body {
         display: flex;
         flex-direction: row;
 
-        aside {
-            width: 25%;
-            background-color: #fff3d0;
-            padding: 20px;
-            border-right: 1px solid #ddd;
-
-            h2{
-                font-size: 1em;
-                margin-bottom: 15px;
-            }
-
-            .filtro-temas ul {
-                list-style: none;
-                padding: 0;
-            }
-
-            .filtro-temas li {
-                margin-bottom: 10px;
-            }
-
-            .filtro-temas a {
-                text-decoration: none;
-                font-size: small;
-                color: #333;
-                /* border-style: solid;
-                border-radius: 10px;
-                font-size: 0.8em;
-                padding: 0.5em; */
-            }
-
-            .filtro-temas a:hover {
-                color: #b05e00;
-            }
-        }
-
-        .blogmain{
-            display: flex;
-            flex-direction: column;
-            gap: 2em;
-            width: 100%;
-            align-items: center;
-            margin-bottom: 2em;
-
-            .articulo{
-                display: flex;
-                flex-direction: row;
-                width: 90%;
-                padding: 3em 2em;
-                border-style: solid;
-                border-radius: 20px;
-                overflow: hidden;
-
-                img{
-                    border-style: solid;
-                    border-radius: 5px;
-                    width: 30%;
-                    aspect-ratio: 1 / 1;
-                    overflow: hidden;
-                }
-
-                .descripcion{
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    gap: 1em;
-                    padding: 1em;
-                    max-width: 65%;
-                }
-            }
-        }
-
-
+        
     }
 
     
@@ -283,6 +212,7 @@ body {
     .espacio ul {
         flex-direction: row;
     }
+
     .mapa{
         width: 95%;
         align-self: center;
@@ -299,25 +229,6 @@ body {
             overflow-x: hidden;
             flex-direction: column;
 
-            aside {
-                width: 100%;
-                border-right: none;
-                border-bottom: 1px solid #ddd;
-                /* overflow-x: auto; */
-                
-            }
-
-            .filtro-temas ul {
-                display: flex;
-                justify-content: start;
-                flex-wrap: wrap;
-                padding: 5px;
-                gap: 2px 1em;
-            }
-
-            .filtro-temas li {
-                flex: 0 0 auto;
-            }
         }
     }
 }
