@@ -262,6 +262,7 @@ body {
         min-width: none;
         flex-direction: column;
         align-self: center;
+        font-size: small;
     }
     .contenedorContacto form{
         display: flex;
@@ -305,6 +306,9 @@ body {
         border-style:solid;
         border-radius: 30px;
         align-self: center;
+        font-size: small;
+        word-wrap: break-word;
+        overflow-x: hidden;
     }
 
     /* footer */
