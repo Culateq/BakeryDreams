@@ -294,15 +294,12 @@ body {
         display: grid;
         width: 100%;
         min-height: 200vh;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(6, 2fr);
         grid-template-areas: 
-        "area1"
-        "area2"
-        "area3"
-        "area4"
-        "area5"
-        "area6";
+        "area1 area2"
+        "area3 area4"
+        "area5 area6";
         /* "area3 area3 area3 area4"
         "area3 area3 area3 area4"; */
         gap: 1em;
@@ -313,11 +310,14 @@ body {
             aspect-ratio: 1/1;
 
             h2{
-                font-size: 1.5em;
+                font-size: 1em;
+                margin-bottom: 0.3em;
+                
             }
 
             button{
-                font-size: 0.8em;
+                font-size: 0.6em;
+                margin-bottom: 0.3em;
             }
         }
         .item1{
