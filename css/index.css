@@ -10,10 +10,19 @@
 body {  
     font-family: var(--fuente-principal);
     width: 100%;
+    background-color: var(--color-background);
     /* min-height: 200vh; */
     display: flex;
     flex-direction: column;
     align-content: space-evenly;
+
+    background-color: var(--color-background);
+    color: var(--color-texto);
+
+    h1, h2, h3, h4{
+        color: var(--color-texto-titulos);
+    }
+
 }
 
 /* css header */
@@ -122,7 +131,7 @@ body {
     "area4 area5 area6 area6";
     /* "area3 area3 area3 area4"
     "area3 area3 area3 area4"; */
-    gap: 1em;
+    gap: 3em;
 }
 
 .item{
@@ -133,14 +142,14 @@ body {
     align-items: center;
     justify-content: end;
     background-color: var(--color-tarjetas);
-    border-radius: 50px;
+    border-radius: 30px;
     background-size:cover;
     background-repeat: no-repeat;
     
 }
 
 .card-title {
-  font-size: 35px;
+  font-size: large;
   margin-bottom: 10px;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 0.5em;
@@ -149,7 +158,7 @@ body {
 
 .card-button {
   padding: 10px 20px;
-  font-size: 16px;
+  font-size: normal;
   background-color: var(--color-button);
   color: var(--color-texto-button);
   border: none;
@@ -165,13 +174,14 @@ body {
 
 .item1{
     grid-area: area1;
-    background-image: url("../img/flancoco.jpg");
-    background-size:cover;
-    background-repeat: no-repeat;
+    background-image: url("../img/flancocoland.jpg");
+    aspect-ratio: 7/5;
+    
 }
 .item2{
     grid-area: area2;
     background-image: url("../img/estrellaguayaba.jpg");
+    
 }
 .item3{
     grid-area: area3;
@@ -179,15 +189,15 @@ body {
 }
 .item4{
     grid-area: area4;
-    background-image: url("../img/pancasero.jpg");
+    background-image: url("../img/pancaseroport.jpg");
 }
 .item5{
     grid-area: area5;
-    background-image: url("../img/rolloscarne.jpg");
+    background-image: url("../img/rolloscarneport.jpg");
 }
 .item6{
     grid-area: area6;
-    background-image: url("../img/queque2.jpg");
+    background-image: url("../img/queque2land.jpg");
 }
 /* css footer */
 
@@ -318,6 +328,8 @@ body {
             background-size:cover;
             background-repeat: no-repeat;
             aspect-ratio: 1/1;
+            overflow: hidden;
+            position: relative;
 
             h2{
                 font-size: 1em;
@@ -333,7 +345,6 @@ body {
         .item1{
             grid-area: area1;
             background-image: url("../img/flancoco.jpg");
-            
             }
         .item2{
             grid-area: area2;
@@ -345,6 +356,7 @@ body {
         }
         .item4{
             grid-area: area4;
+            background-image: url("../img/pancasero.jpg");
         }
         .item5{
             grid-area: area5;
@@ -353,6 +365,7 @@ body {
         .item6{
             grid-area: area6;
             background-image: url("../img/queque2.jpg");
+            
         }
     }
 

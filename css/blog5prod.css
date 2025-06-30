@@ -14,6 +14,17 @@ body {
     flex-direction: column;
     align-content: center;
     align-items: center;
+
+    background-color: var(--color-background);
+    color: var(--color-texto);
+
+    h1, h2, h3, h4{
+        color: var(--color-texto-titulos);
+    }
+
+    a{
+        color: var(--color-texto-nav);
+    }
 }
 
 /* css header */
@@ -162,6 +173,9 @@ body {
             width: 35%;
             margin: 2em 0;
             aspect-ratio: 1/1;
+            border-radius: 30px;
+            border-style: solid;
+            border-color: var(--color-tarjeta);
         }
 
     }

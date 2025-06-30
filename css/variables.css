@@ -1,9 +1,10 @@
 :root {
   
-  --color-texto: #ffffff;
+  --color-texto: #3E2C23 ;
+  --color-texto-titulos: #6B4F3B;
   --color-texto-nav: white;
-  --color-texto-hover-nav: #00c4ff;
-  --color-texto-tarjetas: black;
+  --color-texto-hover-nav: #F5CBA7;
+  --color-texto-tarjetas: #3E2C23;
   --color-texto-footer: white;
   --color-texto-button: white;
 
@@ -11,10 +12,10 @@
   --fuete-titulos: arial, sans-serif;
   --fuente-tarjetas: sans-serif, arial;
   
-  --color-background: white;
-  --color-footer: brown;
-  --color-tarjetas: rgb(168, 180, 55);
-  --color-header: #333;
-  --color-button: #007bff;
-  --color-button-hover: #0056b3;
+  --color-background: #FFF8F0;
+  --color-footer: #A9746E;
+  --color-tarjetas: #DAB49D;
+  --color-header: #3E2C23;
+  --color-button: #A9746E;
+  --color-button-hover: #F5CBA7;
 }
