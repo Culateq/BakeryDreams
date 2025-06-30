@@ -287,6 +287,9 @@ body {
         display: block;
     }
 
+    .principal{
+        margin-top: 80px;
+    }
     .contenidoP{
         display: grid;
         width: 100%;
