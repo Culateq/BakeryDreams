@@ -206,6 +206,24 @@ body {
             }
         }
     }
+    .back-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background-color: var(--color-buttonfloat);
+        color: var(--color-texto-button);
+        border: none;
+        border-radius: 50px;
+        padding: 12px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.041);
+        transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+        background-color: var(--color-buttonfloat-hover);
+    }
 
     
 }
