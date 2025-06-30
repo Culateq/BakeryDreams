@@ -162,10 +162,23 @@ body {
             background-size:cover;
             background-repeat: no-repeat;
             width: 60%;
-            aspect-ratio: 2/1;
+            aspect-ratio: 5/4;
             align-self: center;
             justify-self: center;
-            margin-bottom: 1em;
+            margin-bottom: 2em;
+
+        }
+
+        .nosotros{
+            display: flex;
+            background-image: url("../img/nosotros.jpg");
+            background-size:cover;
+            background-repeat: no-repeat;
+            width: 60%;
+            aspect-ratio: 5/4;
+            align-self: center;
+            justify-self: center;
+            margin-bottom: 2em;
 
         }
 
@@ -307,10 +320,23 @@ body {
                 background-size:cover;
                 background-repeat: no-repeat;
                 width: 90%;
-                aspect-ratio: 2/1;
+                aspect-ratio: 5/4;
                 align-self: center;
                 justify-self: center;
-                margin-bottom: 1em;
+                margin-bottom: 2em;
+
+            }
+
+            .nosotros{
+                display: flex;
+                background-image: url("../img/nosotros.jpg");
+                background-size:cover;
+                background-repeat: no-repeat;
+                width: 90%;
+                aspect-ratio: 5/4;
+                align-self: center;
+                justify-self: center;
+                margin-bottom: 2em;
 
             }
 
