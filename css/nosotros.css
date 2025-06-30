@@ -153,8 +153,21 @@ body {
     .contenedor{
         display: flex;
         flex-direction: column;
-        margin: 2em;
+        margin: 1em;
         text-align: justify;
+
+        .clientes{
+            display: flex;
+            background-image: url("../img/clientes.jpg");
+            background-size:cover;
+            background-repeat: no-repeat;
+            width: 60%;
+            aspect-ratio: 2/1;
+            align-self: center;
+            justify-self: center;
+            margin-bottom: 1em;
+
+        }
 
         .testimonios {
             display: flex;
@@ -287,6 +300,19 @@ body {
             word-wrap: break-word;
             overflow-x: hidden;
             flex-direction: column;
+
+            .clientes{
+                display: flex;
+                background-image: url("../img/clientes.jpg");
+                background-size:cover;
+                background-repeat: no-repeat;
+                width: 90%;
+                aspect-ratio: 2/1;
+                align-self: center;
+                justify-self: center;
+                margin-bottom: 1em;
+
+            }
 
             .testimonios{
                 flex-direction: column;
