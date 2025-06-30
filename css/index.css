@@ -117,7 +117,7 @@ body {
 
 .contenidoP{
     display: grid;
-    width: 100%;
+    width: 90%;
     min-width: none;
     min-height: auto;
     padding: 1em;
@@ -167,6 +167,7 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-bottom: 20px;
+  
 }
 
 .card-button:hover {
